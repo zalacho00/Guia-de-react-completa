@@ -1,0 +1,4 @@
+aqui van las imagenes y fuentes y demas cosas que vite va a optimizar y que vas a importar en el codigo
+
+digamos que aqui tienes una imagen, para importar la imagen a otro sitio debes colocar este codigo: 
+import logo from './assets/logo.png'

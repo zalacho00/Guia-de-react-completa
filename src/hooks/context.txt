@@ -1,0 +1,21 @@
+hooks/ → Aquí guardas lógica reutilizable. Por ejemplo si en varios componentes necesitas saber si el usuario está logueado, en vez de repetir ese código en cada uno, lo encapsulas en un custom hook
+
+
+Ejemplo:
+
+// hooks/useContador.js
+// Con este hook cualquier componente puede tener un contador
+// sin repetir esta lógica una y otra vez
+
+import { useState } from 'react'
+
+function useContador() {
+  const [contador, setContador] = useState(0)
+
+  const incrementar = () => setContador(contador + 1)
+  const decrementar = () => setContador(contador - 1)
+
+  return { contador, incrementar, decrementar }
+}
+
+export default useContador

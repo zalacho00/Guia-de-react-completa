@@ -1,0 +1,21 @@
+aqui van las paginas principales
+
+
+Ejemplo:
+
+// pages/Home.jsx
+// Esta será la página principal de tu app,
+// cada vista nueva que agregues va en su propio archivo aquí
+
+import Button from '../components/Button'
+
+function Home() {
+  return (
+    <div>
+      <h1>Bienvenido</h1>
+      <Button label="Entrar" onClick={() => console.log('click')} />
+    </div>
+  )
+}
+
+export default Home

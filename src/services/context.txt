@@ -1,0 +1,22 @@
+aqui se llaman a las APIS y demas servicios
+
+
+Ejemplos:
+
+// services/userService.js
+// Con estas funciones puedes traer datos de tu API desde cualquier
+// componente, sin repetir el fetch en cada uno
+
+export async function getUsuarios() {
+  const res = await fetch('https://tuapi.com/usuarios')
+  const data = await res.json()
+  return data
+}
+
+export async function crearUsuario(nuevoUsuario) {
+  const res = await fetch('https://tuapi.com/usuarios', {
+    method: 'POST',
+    body: JSON.stringify(nuevoUsuario)
+  })
+  return res.json()
+}
