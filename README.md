@@ -45,3 +45,56 @@ En conclusion debe quedarte algo asi: <br><br>
 
 <img width="352" height="554" alt="Captura de pantalla 2026-04-02 131553" src="https://github.com/user-attachments/assets/01c6de69-6ca5-4d05-89b4-254a1174b58f" />
 
+
+<hr>
+
+## Enrutamiento de URLS
+
+Para hacer un enrutamiento mas rapido y eficiente vamos a usar la siguiente libreria con la siguiente instalacion en la terminal: `npm i react-router-dom` 
+<br><br>
+<img width="935" height="176" alt="Captura de pantalla 2026-04-05 214435" src="https://github.com/user-attachments/assets/65119619-d485-4a2b-85c8-a5b51aa5c402" />
+<br><br>
+
+Asi debe quedar el `src/main.jsx`:
+<br><br>
+ <img width="513" height="378" alt="Captura de pantalla 2026-04-05 214645" src="https://github.com/user-attachments/assets/17bb8af5-c00e-4618-8b5a-16d24d34541a" />
+<br><br>
+
+Ahora que tenemos listo la configuracion de las rutas, vamos a crear un componente y paginas para ver como funcionan.
+
+### componente nadvar
+<br><br>
+<img width="1256" height="557" alt="Captura de pantalla 2026-04-05 215736" src="https://github.com/user-attachments/assets/73a354aa-0cb4-428c-ba15-2e0863180d10" />
+<br><br>
+este nadvar va a estar en todas las paginas que queramos y de este modo nos ahorramos mucho codigo al reutilizarlo aqui como un componente.
+
+Ahora vamos a crear las paginas donde vamos a ver como funciona el sistema de rutas y el componente de nadvar
+<br><br>
+<img width="1251" height="552" alt="Captura de pantalla 2026-04-05 220558" src="https://github.com/user-attachments/assets/79f43bf5-90b9-4a21-8c3d-149bb853e8a2" />
+<br><br>
+
+aqui ya creamos la pagina home que se encuentra en `src/pages/home.jsx`
+
+Ahora crea la pagina de "pagina1" por ejemplo:
+<br><br>
+<img width="920" height="433" alt="Captura de pantalla 2026-04-05 221123" src="https://github.com/user-attachments/assets/f9af7b8e-6a6f-4982-8021-a079243dd746" />
+<br><br>
+
+Y lo mismo para una segunda pagina:
+<br><br>
+<img width="944" height="443" alt="Captura de pantalla 2026-04-05 221243" src="https://github.com/user-attachments/assets/270878f8-c162-4599-998f-f897f4c07665" />
+<br><br>
+
+Y ya por ultimo enrutamos todo a la pagina principal es decir en `src/App.jsx` que quedaria del siguiente modo:
+<br><br>
+<img width="829" height="420" alt="Captura de pantalla 2026-04-05 222753" src="https://github.com/user-attachments/assets/bcfc8ab2-eacd-4bb2-b896-051648e9b61a" />
+<br><br>
+
+
+
+
+
+
+
+
+
